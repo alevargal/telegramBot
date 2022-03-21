@@ -13,8 +13,12 @@ repositories {
 }
 
 dependencies {
+	compileOnly 'org.projectlombok:lombok:1.18.22'
+	annotationProcessor 'org.projectlombok:lombok:1.18.22'
 	implementation 'org.springframework.boot:spring-boot-starter'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation "org.telegram:telegrambots-spring-boot-starter:5.0.1"
+
 }
 
 tasks.named('test') {
